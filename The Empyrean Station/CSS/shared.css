@@ -70,6 +70,7 @@ p {
     font-weight: 300;
     line-height: 30px;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 .text-center {
@@ -135,13 +136,13 @@ section {
     max-height: 340px;
     margin: 0% auto;
     content: " ";
-    /* top: 0:
-    left: 0: */
-    /* position absolute; */ /* to the top edge of the screen */
+    top: 0;
+    left: 0;
+    position: absolute;
     width: 100%;
     position: fixed;
     z-index: 100;
-    /* background-color: rgba(255, 255, 255, 0.5); */
+    /*background-color: rgba(255, 255, 255, 0.5);*/
 }
 
 /* -----------------------------------------
@@ -201,7 +202,7 @@ section {
     flex-wrap: wrap;
     padding: 10px;
     border-radius: 8px;
-    margin: 0px auto;
+    margin: 0% auto;
     background-color: rgba(100,65,0,.3);
     box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
 }
@@ -223,7 +224,7 @@ section {
 .reservation h2 {
     width: 70%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0% auto;
     color: #13161b;
     font-weight: 500;
     font-size: 1.3em;
@@ -246,7 +247,7 @@ section {
 .reservation p {
     color: #13161b;
     width: 50%;
-    margin: 0 auto;
+    margin: 0% auto;
 }
 
 .reservation form {
@@ -292,7 +293,7 @@ section {
 
 .terms {
     margin: 30px 1px 0 0 ;
-    margin-top: 13%;
+    margin-top: 7%;
     padding-left: 52px;
     font-size: 14px;
     line-height: 5px;
