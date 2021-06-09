@@ -47,7 +47,7 @@ span {
 
 .home-container {
     border-radius: 5px;
-    background-color: #5B6659;
+    background-image: linear-gradient(to bottom right, red, rgb(61, 61, 45));
     padding: 20px;
     margin: 0% auto;
     width: 100%;
