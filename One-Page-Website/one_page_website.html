@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="CSS/one_page_website.css">
 		<title>Page Title</title>
 	</head>
 	
@@ -70,17 +71,29 @@
 			
 	<!-- Contact Form -->
 			
-	<section>		
-			<div id="contact">
-				<h1>Contact Form</h1>
-				<form action="" method="get">
-					First Name: <input type="text" name="First_Name"><br>
-					Last Name: <input type="text" name="Last_Name"><br>
-					Email: <input type="email" name="Email"><br>
-					Phone Number: <input type="phone_number" name="Phone_Number"><br>
-					<input type="submit" value="Submit">
-				</form>
-			</div>	
+	<section id="contact">
+		<div class="container">
+			<div class="heading-padding">
+				<h1 class="heading-padding">Contact Form</h1>
+				<div class="form-info">
+					<h2><span>Fill out this form to receive updates!</span>
+					</h2>
+					<div class="form-rsvp">
+						<form action="" method="post">
+							<input class="rsvp" type="text" value="" placeholder="First Name">
+							<input class="rsvp" type="text" value="" placeholder="Last Name">
+							<input class="rsvp" type="text" value="" placeholder="Email Address">
+							<input class="rsvp" type="text" value="" placeholder="Phone Number">
+							<div class="form-spacer">
+							</div>
+							<div class="submit">
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div>	
+				</div>
+			</div>
+		</div>
 	</section>			
 				
 	<!-- End of Contact Form -->
