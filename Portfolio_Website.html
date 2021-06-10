@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- HEAD -->
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width" />
+        <title>Jeff Stoppel</title>
+        <link rel="stylesheet" type="text/css" href="">
+    </head>
+
+    <!-- BODY -->
+    <body>
+        <body class="Background">
+
+            <!-- NAVBAR -->
+            <div class="Navbar"
+                <a class="active" href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#GitHub">GitHub</a>
+                <a href="#Contact">Contact</a>
+            </div>
+
+            <!-- Breaks to add space between navbar and first heading -->
+            <br>
+            <br>
+
+            <!-- BACKGROUND VIDEO -->
+            <div class="Home">
+                <video autoplay mute loop id="Video I'll pick eventually">
+                    <source src="" type="video/mp4">
+                    <!-- VIDEO ERROR MESSAGE -->
+                    Something went wrong.
+                </video>    
+            </div>
+
+            <!-- VIDEO TEXT -->
+            <div class="Vidoe_Text">
+                <h1 class="white-text">Jeff Stoppel's Portfolio</h1>
+                <strong>
+                    <p class="center">
+                        <q>Insert inspirational quote here.
+                            <br>Next line of inspirational quote.
+                            <br>Last line of inspirational quote.
+                        </q>
+                        <br> -Name of person
+                        <br>
+                        <br> My name is Jeff Stoppel. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                        <br>
+                        <br> Thank you for visiting and enjoy!
+                    </p>
+                </strong>
+            </div>
+
+
+            <!-- ABOUT SECTION -->
+            <div class="Row" id="About">
+                <!-- LEFT COLUMN -->
+                <div class="column">
+                    <img src="" alt="Pick an image already">
+                </div>
+                <!-- RIGHT COLUMN -->
+                <div class="column_1">
+                    <h1>About</h1>
+                    <p>
+                        I am currently learning software development. I went to Oregon State University to study Kinesiology.
+                    <br>
+                    <br>I am a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                    <br>I am learning to become a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                    </p>
+                </div>    
+            </div>
+
+            <!-- GitHub SECTION-->
+            <div class="Row" id="GitHub">
+                <!-- LEFT COLUMN -->
+                <div class="column_1">
+                    <h1>GitHub</h1>
+                    <p>
+                        You can view my coding projects on my GitHub profile here:
+                        <br>
+                        <p class="center"><a href="https://github.com/jeffstop" target="blank">Jeff Stoppel GitHub</a></p>
+                    </p>
+                </div>
+                <!-- RIGHT COLUMN -->
+                <div class="column">
+                    <a href="https://github.com/jeffstop" target="blank"><img src="GitHub image" alt="GitHub Logo"></a>
+                </div>
+            </div>
+
+            <!-- CONTACT SECTION -->
+            <div class="Row" id="Contact">
+                <!-- CONTACT IMAGE, LEFT COLUMN -->
+                <div class="column column_tall">
+                    <img src="custom image" alt="Some image">
+                </div>
+                <!-- CONTACT FORM, RIGHT COLUMN -->
+                <div class="column_1 column_tall"> 
+                    <h1>Contact</h1>
+                    <!-- This specifies where and how to send the form data; leaving blank for now -->
+                    <form action="" method="POST"> <!-- Here utilizing a 3rd part service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                        <label>Name:</label>
+                            <input type="text" placeholder="Please enter your name here">
+                        <label>Email:</label>
+                            <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                        <label>Message:</label>
+                            <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                            <input type="submit" value="SUBMIT">        
+                    </form>
+                </div>       
+            </div>
+
+            <!-- FOOTER SECTION -->
+            <footer>
+                <p>
+                    <p class="center">&copy; Jeff 2021</p>
+                    <br>
+                </p>
+            </footer>
+    </body>
+</html>
