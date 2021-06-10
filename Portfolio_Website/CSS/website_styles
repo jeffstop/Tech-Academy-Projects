@@ -1,0 +1,14 @@
+/*------- GENERAL STYLING -------*/
+/* Body */
+body {
+    margin: 0%; /*Will make site display all the way to the edge of the browser screen */
+}
+
+/* Heading 1 elements */
+h1 {
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 3%;
+    color: #ff0000;
+}
