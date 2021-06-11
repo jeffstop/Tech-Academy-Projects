@@ -188,3 +188,39 @@ footer {
     to {top: 0vw;}
 }
 /*------- END VIDEO STYLING -------*/
+
+/*------- TABLE STYLING -------*/
+* {     /* This asterisk is a universal selector that applies this effect to all elements on the page */
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: #f2f2f2;
+}
+
+/* Media Queries */
+@media screen and (max-width: 576px) {
+    .comlumn {
+        overflow: auto;
+    }
+}
+
+.column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #4d4d4d;
+}
+
+/* This class is applied to columns in the last row to give room for the contact form, without changing the columns higher up */
+.column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+} 
