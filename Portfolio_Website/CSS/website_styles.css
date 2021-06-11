@@ -224,3 +224,61 @@ footer {
     padding-top: 3.5%;
     height: 450px;
 } 
+
+/* This inserts something after the content of the selected elements (ROW) */
+.Row:after {
+    content: ""; /* Left blank to allow footer to be displayed */
+    display: table;
+    clear: both;
+}
+/*------- END TABLE STYLING -------*/
+
+/*------- CONTACT FORM STYLING -------*/
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Hover effects for input boxes */
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset;
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+
+/* Form element */
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-family: "Trebuchet MS", Optima;
+}
+/*------- END CONTACT FORM STYLING -------*/
