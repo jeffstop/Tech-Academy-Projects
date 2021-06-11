@@ -9,7 +9,7 @@ h1 {
     text-transform: uppercase;
     font-family: "Trebuchet MS", Optima;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 5px;
     color: #1a1a1a;
 }
 
@@ -71,6 +71,7 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    top: 50%;
 }
 
 /* Image element hover effects */
@@ -103,8 +104,8 @@ footer {
     top: 0;
     width: 100%;
     z-index: 1;
-    -webkit-animation: moveNav 5s;
-    animation: moveNav 5s;
+    -webkit-animation: moveNav 1.75s;
+    animation: moveNav 1.75s;
 }
 
 /* moveNav animation effect for moving the navbar in from the left of the screen */
@@ -124,8 +125,8 @@ footer {
     font-size: 20px;
     text-align: center;
     position: relative;
-    -webkit-animation: moveNavText 5.75s;
-    animation: moveNavText 5.75s;
+    -webkit-animation: moveNavText 2.5s;
+    animation: moveNavText 2.5s;
 }
 
 /* moveNavText animation effect for moving navbar text from above the view to the navbar */
@@ -156,7 +157,7 @@ footer {
 /*------- END NAVBAR STYLING -------*/
 
 /*------- VIDEO STYLING -------*/
-#Typing_Video {
+#Video {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -166,7 +167,7 @@ footer {
 
 /* Video Media Queries */
 @media screen and (max-width: 576px) {
-    #Typing_Video {
+    #Video {
         display: none;
     }
 }
@@ -174,12 +175,12 @@ footer {
 /* Texts over the video */
 .Video_Text {
     background: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: rgb(255, 255, 255);
     width: 100%;
     padding: 20px;
     position: relative;
-    -webkit-animation: moveVideoText 5.75s;
-    animation: moveVideoText 5.75s;
+    -webkit-animation: moveVideoText 2.5s;
+    animation: moveVideoText 2.5s;
 }
 
 /* Animation effect causes the video overlay text to move up from the bottom of the page upon page load */
@@ -198,9 +199,20 @@ footer {
     float: left;
     width: 50%;
     padding: 10px;
-    padding-top: 3%;
+    padding-top: 1.9%;
     height: 400px;
-    background-color: #f2f2f2;
+    background-image: linear-gradient(90deg, #EADEDB, #BC70A4, #c0d644);
+    overflow: hidden;
+}
+
+.column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-image: linear-gradient(to right, #c0d644, #88C547, #4BB24F, #009E57, #00885E, #007262);
+    overflow: hidden;
 }
 
 /* Media Queries */
@@ -210,13 +222,10 @@ footer {
     }
 }
 
-.column_1 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    padding-top: 1.9%;
-    height: 400px;
-    background-color: #4d4d4d;
+@media screen and (max-width: 576px) {
+    .comlumn_1 {
+        overflow: auto;
+    }
 }
 
 /* This class is applied to columns in the last row to give room for the contact form, without changing the columns higher up */
