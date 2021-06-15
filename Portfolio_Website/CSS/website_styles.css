@@ -35,12 +35,6 @@ p {
     padding-right: 20px;
 }
 
-/* Paragraph element hover effect */
-p:hover {
-    transition: transform 1s;
-    transform: scale(1.01);
-}
-
 /* Center class - applies to all elements with the "center" class */
 .center {
     text-align: center;
@@ -76,7 +70,7 @@ img{
 
 /* Image element hover effects */
 img:hover {
-    filter: grayscale(5%);
+    filter: grayscale(0%);
     transition: transform 1s;
     transform: scale(1.1);
 }
@@ -125,8 +119,8 @@ footer {
     font-size: 20px;
     text-align: center;
     position: relative;
-    -webkit-animation: moveNavText 2.5s;
-    animation: moveNavText 2.5s;
+    -webkit-animation: moveNavText 2s;
+    animation: moveNavText 2s;
 }
 
 /* moveNavText animation effect for moving navbar text from above the view to the navbar */
@@ -201,7 +195,7 @@ footer {
     padding: 10px;
     padding-top: 1.9%;
     height: 400px;
-    background-image: linear-gradient(90deg, #EADEDB, #BC70A4, #c0d644);
+    background-color: #00F4FF;
     overflow: hidden;
 }
 
@@ -211,7 +205,7 @@ footer {
     padding: 10px;
     padding-top: 1.9%;
     height: 400px;
-    background-image: linear-gradient(to right, #c0d644, #88C547, #4BB24F, #009E57, #00885E, #007262);
+    background-color: #8584E7;
     overflow: hidden;
 }
 
@@ -280,7 +274,7 @@ input[type=submit]:hover {
     background-color: white;
     color: black;
     transform: scale(1.5);
-    transition: transform 1.5s;
+    transition: transform 0.75s;
 }
 
 /* Form element */
