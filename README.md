@@ -8,7 +8,7 @@ This repository is for my Tech Academy projects.
 ### One Page Website
 This is a simple one page website that uses CSS to style it. It contains a navbar, images, a video, and a contact form. The content of the page is about my Australian Shepherd dog, Ella.
 ### Portfolio Website
-This is the first version of my portfolio website, which can be found [here](jeffstop.github.io). This version of the webpage uses CSS for styling and includes a video background on loop, images, links, a navbar, and a contact form. 
+This is the first version of my portfolio website, which can be found [here](https://jeffstop.github.io/). This version of the webpage uses CSS for styling and includes a video background on loop, images, links, a navbar, and a contact form. 
 ### The Empyrean Station
 This page is an example home page for Space Hotel company. It's styled using CSS and contains a navbar, image containers, and a form.
 ### Bootstrap4 Project
