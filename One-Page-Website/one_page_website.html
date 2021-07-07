@@ -49,73 +49,76 @@
 		<div id="gallery">
 			<div class="photo-container">
 				<h1><span>Gallery</span></h1>
-				<div class="row">
-					<div class="column">
-						<img src="Images/pexels-cottonbro-7118213.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-					</div>
-					<div class="column">
-						<img src="Images/pexels-jessica-jochheim-6410609.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-					</div>
-					<div class="column">
-						<img src="Images/pexels-maud-slaats-2363465.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-					</div>
-					<div class="column">
-						<img src="Images/pexels-michael-morse-1766601.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-					</div>
-				</div>
-				
-					<!-- The Modal/Lightbox -->	
-					<div id="myModal" class="modal">
-						<span class="close cursor" onclick="closeModal()">&times;</span>
-						<div class="modal-content">
-
-							<div class="mySlides">
-								<div class="numbertext">1 / 4</div>
-								<img src="Images/pexels-cottonbro-7118213.jpg" style="width:100%">
-							</div>
-
-							<div class="mySlides">
-								<div class="numbertext">2 / 4</div>
-								<img src="Images/pexels-jessica-jochheim-6410609.jpg" style="width:100%">
-							</div>
-
-							<div class="mySlides">
-								<div class="numbertext">3 / 4</div>
-								<img src="Images/pexels-maud-slaats-2363465.jpg" style="width:100%">
-							</div>
-
-							<div class="mySlides">
-								<div class="numbertext">4 / 4</div>
-								<img src="Images/pexels-michael-morse-1766601.jpg" style="width:100%">
-							</div>
-					
-							<!-- Next/previous controls -->
-							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="next" onclick="plusSlides(1)">&#10095;</a>
-							
-							<!-- Caption Text -->
-							<div class="caption-container">
-								<p id="caption"></p>
-							</div>
-
-							<!-- Thumbnail image controls -->
-							<div class="column">
-								<img class="demo" src="Images/pexels-cottonbro-7118213.jpg" onclick="currentSlide(1)" alt="A puppy Aussie laying down">
-							</div>
-							<div class="column">
-								<img class="demo" src="Images/pexels-jessica-jochheim-6410609.jpg" onclick="currentSlide(2)" alt="An Aussie taking a break on a farm">
-							</div>
-							<div class="column">
-								<img class="demo" src="Images/pexels-maud-slaats-2363465.jpg" onclick="currentSlide(3)" alt="An Aussie on the beach">
-							</div>
-							<div class="column">
-								<img class="demo" src="Images/pexels-michael-morse-1766601.jpg" onclick="currentSlide(4)" alt="A puppy Aussie in the leaves">
-							</div>
+					<div class="row">
+						<div class="column">
+							<img src="Images/pexels-cottonbro-7118213.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
 						</div>
-					</div>
-				
+						<div class="column">
+							<img src="Images/pexels-jessica-jochheim-6410609.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="Images/pexels-maud-slaats-2363465.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+						</div>
+						<div class="column">
+						  	<img src="Images/pexels-michael-morse-1766601.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+						</div>
+					</div>	
 			</div>
 		</div>
+
+		<!-- Modal/Lightbox -->	
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="Images/pexels-cottonbro-7118213.jpg" style="width:100%">
+				</div>
+		  
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="Images/pexels-jessica-jochheim-6410609.jpg" style="width:100%">
+				</div>
+		  
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="Images/pexels-maud-slaats-2363465.jpg" style="width:100%">
+				</div>
+		  
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="Images/pexels-michael-morse-1766601.jpg" style="width:100%">
+				</div>
+		  
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+		  
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="Images/pexels-cottonbro-7118213.jpg" onclick="currentSlide(1)" alt="A puppy laying next to a pillow">
+				</div>
+		  
+				<div class="column">
+					<img class="demo" src="Images/pexels-jessica-jochheim-6410609.jpg" onclick="currentSlide(2)" alt="An Aussie taking a break at a farm">
+				</div>
+		  
+				<div class="column">
+					<img class="demo" src="Images/pexels-maud-slaats-2363465.jpg" onclick="currentSlide(3)" alt="An Aussie on the beach">
+				</div>
+		  
+				<div class="column">
+					<img class="demo" src="Images/pexels-michael-morse-1766601.jpg" onclick="currentSlide(4)" alt="A puppy in a pile of leaves">
+				</div>
+			</div>
+		</div>		
+
 	</section>
 	
 	<!-- End of Gallery -->
