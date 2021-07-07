@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="CSS/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
 		<title>One Page Website</title>
 	</head>
 	
@@ -48,10 +49,49 @@
 		<div id="gallery">
 			<div class="photo-container">
 				<h1><span>Gallery</span></h1>
-					<img src="./Images/Ella_1.jpg" alt="My dog" width="375" height="500">
-					<p>Ella at the Park</p>
-					<img src="./Images/Ella_2.jpg" alt="My dog" width="375" height="500">
-					<p>Ella after a hike</p>
+				<div class="row">
+					<div class="column">
+						<img src="Images/Ella_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="375" height="500">
+					</div>
+					<div class="column">
+						<img src="Images/Ella_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" width="375" height="500">
+					</div>
+				</div>
+				<!-- The Modal/Lightbox -->	
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 2</div>
+							<img src="Images/Ella_1.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 2</div>
+							<img src="Images/Ella_2.jpg" style="width:100%">
+						</div>
+
+					</div>
+				</div>
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+				<!-- Caption Text -->
+				<div class="caption-container">
+					<p id="caption">Ella!</p>
+				</div>
+
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img src="Images/Ella_1.jpg" class="demo" onclick="currentSlide(1)" alt="Ella at the park">
+				</div>
+
+				<div class="column">
+					<img src="Images/Ella_2.jpg" class="demo" onclick="currentSlide(2)" alt="Ella after a hike">
+				</div>
+
 			</div>
 		</div>
 	</section>
