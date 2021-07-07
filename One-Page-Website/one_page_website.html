@@ -56,42 +56,42 @@
 					<div class="column">
 						<img src="Images/Ella_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" width="375" height="500">
 					</div>
-				</div>
-				<!-- The Modal/Lightbox -->	
-				<div id="myModal" class="modal">
-					<span class="close cursor" onclick="closeModal()">&times;</span>
-					<div class="modal-content">
+				
+					<!-- The Modal/Lightbox -->	
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
 
-						<div class="mySlides">
-							<div class="numbertext">1 / 2</div>
-							<img src="Images/Ella_1.jpg" style="width:100%">
+							<div class="mySlides">
+								<div class="numbertext">1 / 2</div>
+								<img src="Images/Ella_1.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">2 / 2</div>
+								<img src="Images/Ella_2.jpg" style="width:100%">
+							</div>
+
 						</div>
+					</div>
+					<!-- Next/previous controls -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+					<!-- Caption Text -->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
 
-						<div class="mySlides">
-							<div class="numbertext">2 / 2</div>
-							<img src="Images/Ella_2.jpg" style="width:100%">
-						</div>
+					<!-- Thumbnail image controls -->
+					<div class="column">
+						<img class="demo" src="Images/Ella_1.jpg" onclick="currentSlide(1)" alt="Ella at the park">
+					</div>
 
+					<div class="column">
+						<img class="demo" src="Images/Ella_2.jpg" onclick="currentSlide(2)" alt="Ella after a hike">
 					</div>
 				</div>
-				<!-- Next/previous controls -->
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-				
-				<!-- Caption Text -->
-				<div class="caption-container">
-					<p id="caption">Ella!</p>
-				</div>
-
-				<!-- Thumbnail image controls -->
-				<div class="column">
-					<img src="Images/Ella_1.jpg" class="demo" onclick="currentSlide(1)" alt="Ella at the park">
-				</div>
-
-				<div class="column">
-					<img src="Images/Ella_2.jpg" class="demo" onclick="currentSlide(2)" alt="Ella after a hike">
-				</div>
-
 			</div>
 		</div>
 	</section>
