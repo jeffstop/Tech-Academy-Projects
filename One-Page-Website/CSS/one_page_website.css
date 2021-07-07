@@ -301,12 +301,16 @@ span {
     border-radius: 3px 0 0 3px;
 }
 
+.prev {
+    left: 0;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/2 etc) */
+/* Number text (1/4 etc) */
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -325,6 +329,9 @@ span {
 
 img.demo {
     opacity: 0.6;
+    display: inline-block;
+    width: 25%;
+    padding: 5px;
 }
 
 .active, .demo:hover {
@@ -333,6 +340,9 @@ img.demo {
 
 img.hover-shadow {
     transition: 0.3s;
+    display: inline-block;
+    width: 25%;
+    padding: 5px;
 }
 
 .hover-shadow:hover {
