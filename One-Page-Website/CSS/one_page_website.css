@@ -28,7 +28,7 @@ span {
 .photo-container {
     border-radius: 5px;
     background-color: #43463D;
-    padding: 20px;
+    padding: 5px;
     margin: 0% auto;
     width: 100%;
 }
@@ -327,22 +327,25 @@ span {
     color: white;
 }
 
+/* Thumbnail photos */
 img.demo {
     opacity: 0.6;
-    display: inline-block;
+    display: inline-flex;
     width: 25%;
-    padding: 5px;
 }
 
 .active, .demo:hover {
     opacity: 1;
 }
 
+/* Gallery Pictures */
 img.hover-shadow {
     transition: 0.3s;
     display: inline-block;
-    width: 25%;
+    width: 65%;
     padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hover-shadow:hover {
