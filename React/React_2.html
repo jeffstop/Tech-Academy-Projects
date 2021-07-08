@@ -11,7 +11,7 @@
         <script>
             const X = React.createElement;
 
-            class likebutton extends React.Component {
+            class likeButton extends React.Component {
                 constructor(props) {
                     super(props);
                     this.state = { liked: false };
@@ -29,9 +29,9 @@
                     );
                 }
             }
-
+            
             const domContainer = document.querySelector('#like_button_container');
-            React.DOM.render(X(likeButton), domContainer);
+            ReactDOM.render(X(likeButton), domContainer);
         </script>
     </body>
 </html>
