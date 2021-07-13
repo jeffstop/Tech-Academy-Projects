@@ -32,67 +32,67 @@ h1 {
 
 /* Heading 1 element hover effect */
 h1:hover {
-    filter: grayscale(5%);  /*  */
-    transform: scale(1.1);  /*  */
-    transition: transform 1s;   /*  */
+    filter: grayscale(5%);  /* Adds a slight gray filter to h1 headings when hovered over */
+    transform: scale(1.1);  /* Increase size by 1.1 during hover */
+    transition: transform 1s;   /* Transformation time 1 second */
 }
 
 /* Styling for portfolio title text */
 .white-text {
-    color: #fff;    /*  */
+    color: #fff;    /* Changes color of Portfolio Title text */
     padding-top: 10vh;  /* Adds padding to the top of the Portfolio Title text */
 }
 
 /* Paragraph elements */
 p {
     font-family: Perpetua, Rockwell Extra Bold;
-    text-align: justify;    /*  */
-    letter-spacing: 1px;    /*  */
-    font-size: 20px;    /*  */
-    padding-left: 20px;     /*  */
-    padding-right: 20px;    /*  */
+    text-align: justify;    /* Justifies text within paragraph element */
+    letter-spacing: 1px;    /* Expands text */
+    font-size: 1.5vw;    /* Font size equal to 1.5% of viewport width */
+    padding-left: 1vw;     /* Padding equal to 1% of viewport width */
+    padding-right: 1vw;    /* Padding equal to 1% of viewport width */
 }
 
 /* Center class - applies to all elements with the "center" class */
 .center {
-    text-align: center; /*  */
+    text-align: center; /* This center aligns the text */
 }
 
 /* Center class hover effect - Only effects quote, GitHub link, and footer */
 .center:hover {
-    transition: transform 2s;   /*  */
-    transform: scale(1.1);  /*  */
+    transition: transform 2s;   /* Makes transform effect take 2 seconds */
+    transform: scale(1.1);  /* Increases size by 1.1 when hovered over */
 }
 
 /* Anchor elements */
 a {
-    color: blue;    /*  */
-    cursor: pointer;    /*  */
-    text-decoration: underline; /*  */
+    color: blue;    /* Makes all links blue */
+    cursor: pointer;    /* Changes mouse to pointer when hovered over or clicked */
+    text-decoration: underline; /* Makes all links underlined */
 }
 
 /* Quotation elements */
 q {
-    font-style: italic; /*  */
+    font-style: italic; /* Makes the quote italicized */
 }
 
 /* Image elements */
 img{
-    filter: grayscale(75%); /*  */
-    border-radius: 8px;     /*  */
-    max-width: 100%;    /*  */
-    height: 100%;   /*  */
+    filter: grayscale(75%); /* Takes away 75% of color */
+    border-radius: 8px;     /* Gives all images slightly rounded corners */
+    max-width: 100%;    /* Makes all images stay within the width of their container */
+    height: 100%;   /* Sets the height of all images */
     display: block; /*  */
-    margin: auto auto auto auto;    /*  */
+    margin: auto auto auto auto;    /* Centers all images */
 }
 
 /* Image element hover effects */
 img:hover {
-    filter: grayscale(5%);  /*  */
+    filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
 }
 
 /* Media Queries */
-/*  */
+/* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
 @media screen and (max-width: 576px) {
     img {
         height: 100px;
@@ -102,64 +102,64 @@ img:hover {
 
 /* Footer Styling */
 footer {
-    padding: 2%;    /*  */
+    padding: 2%;    /* Gives footer padding equal to 2% of the width of the element's area */
     background-color: white;
 }
 /*------- END OF GENERAL STYLING -------*/
 
 /*------- NAVBAR STYLING -------*/
 .Navbar {
-    overflow: hidden;   /*  */
-    background-color: black;    /*  */
-    position: fixed;    /*  */
-    top: 0; /*  */
-    width: 100%;    /*  */
-    z-index: 1; /*  */
-    -webkit-animation: moveNav 1.75s;   /*  */
-    animation: moveNav 1.75s;   /*  */
+    overflow: hidden;   /* Hides any content that overflows beyond the boundary of the navbar */
+    background-color: black;    /* Colors the Navbar black */
+    position: fixed;    /* Keeps navbar at the top of the screen */
+    top: 0; /* Leaves no space above the navbar */
+    width: 100%;    /* Makes the navbar span the entire width of the page */
+    z-index: 1; /* Makes sure other elements don't display over the navbar */
+    -webkit-animation: moveNav 1.75s;   /* Safari */
+    animation: moveNav 1.75s;   /* Makes the MoveNav animation last 1.75 seconds */
 }
 
 /* moveNav animation effect for moving the navbar in from the left of the screen */
 @keyframes moveNav {
-    from {left: -100vw;}    /*  */
-    to {left: 0vw;} /*  */
+    from {left: -100vw;}    /* Starts navbar off the screen to the left */
+    to {left: 0vw;} /* Moves navbar into place */
 }
 
 /* Navbar links */
 .Navbar a {
-    float: left;    /*  */
-    display: block; /*  */
-    color: white;   /*  */
-    padding: 14px 16px; /*  */
-    text-decoration: none;  /*  */
-    font-family: Avant Garde, Helvetica;    /*  */
-    font-size: 20px;    /*  */
-    text-align: center; /*  */
-    position: relative; /*  */
-    -webkit-animation: moveNavText 2s;  /*  */
-    animation: moveNavText 2s;  /*  */
+    float: left;    /* Text floats on the left of the navbar */
+    display: block; /* Ensures other text will be displayed on the same row, instead of a new row */
+    color: white;   /* Font color of navbar */
+    padding: 14px 16px; /* Adds padding around text */
+    text-decoration: none;  /* Gets rid of underlines under the text on navbar */
+    font-family: Avant Garde, Helvetica;    /* Font family used for navbar */
+    font-size: 1.5vw;    /* Font size for navbar */
+    text-align: center; /* Centers text in its container */
+    position: relative; /* Sets text relative to its normal positioning, allows use of animation below */
+    -webkit-animation: moveNavText 2s;  /* Animation for Safari */
+    animation: moveNavText 2s;  /* Applies the moveNavText animation for 5.75s */
 }
 
 /* moveNavText animation effect for moving navbar text from above the view to the navbar */
 @keyframes moveNavText {
-    from{top: -100vw;}  /*  */
-    to {top: 0vw;}  /*  */
+    from{top: -100vw;}  /* Sets navbar text 100% above viewport */
+    to {top: 0vw;}  /* Lowers navbar text onto navbar */
 }
 
 /* Screens 576px and smaller will display navbar links equally distributed */
 @media screen and (max-width: 576px) {
     .Navbar a {
-        width: 20%; /*  */
+        width: 20%; /* Sets each navbar link to 20% of the navbar */
         font-size: 12px;
     }
 }
 
 /* Navbar hover effects */
 .Navbar a:hover {
-    background-color: #f4f4f4;  /*  */
-    color: black;   /*  */
-    font-weight: bold;  /*  */
-    cursor: pointer;    /*  */
+    background-color: #f4f4f4;  /* Background color displayed when hovered over link */
+    color: black;   /* Font color when a navbar element is hovered over */
+    font-weight: bold;  /* Makes text bold when hovered over */
+    cursor: pointer;    
 }
 
 /*Navbar home button */
