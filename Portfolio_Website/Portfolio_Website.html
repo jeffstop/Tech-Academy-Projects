@@ -14,23 +14,20 @@
 
             <!-- NAVBAR -->
             <div class="Navbar">
-                <a class="active" href="#Home">Home</a>
+                <a href="#Home">Home</a>
                 <a href="#Slideshow">Slideshow</a>
                 <a href="#About">About</a>
                 <a href="#GitHub">GitHub</a>
                 <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
             </div>
 
-            <!-- Breaks to add space between navbar and first heading -->
-            <br>
-
             <!-- BACKGROUND VIDEO -->
-            <div class="Home">
+            <div id="Home">
                 <video autoplay muted loop id="Video">
-                    <source src="./Videos/Computer_1.mp4" type="video/mp4">
+                    <source src="Videos/Computer_1.mp4" type="video/mp4">
                     <!-- VIDEO ERROR MESSAGE -->
-                    Something went wrong.
-                </video>    
+                    Your browser does not support HTML5 video
+                </video>
             </div>
 
             <!-- VIDEO TEXT -->
@@ -155,7 +152,7 @@
                             <input type="text" placeholder="Type your message here" name="message">
 
                         <button type="submit" class="btn">SUBMIT</button>
-                        <button type="button" class="btn cancel" onclick="closeform()">CLOSE</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                     </form>
                 </div>
             </div>
