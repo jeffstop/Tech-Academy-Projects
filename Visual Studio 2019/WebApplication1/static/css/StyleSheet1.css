@@ -18,6 +18,7 @@ p {
 
 
 #javascript-container {
+    text-align: center;
     width: 400px;
     height: 400px;
     position: relative;
