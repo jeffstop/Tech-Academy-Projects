@@ -1,6 +1,5 @@
 ﻿body {
     background: red;
-    text-align: center;
 }
 
 h1 {
@@ -19,11 +18,12 @@ p {
 
 
 #javascript-container {
-    text-align: center;
     width: 400px;
     height: 400px;
     position: relative;
     background: blue;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #myAnimation {
